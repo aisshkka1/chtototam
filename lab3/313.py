@@ -1,19 +1,17 @@
-n = int(input())
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
 arr = list(map(int, input().split()))
-q = int(input())
 
-for i in range(q):
-    op = input().split()
-    if op[0] == "add":
-        x = int(op[1])
-        arr = list(map(lambda a: a + x, arr))
-    elif op[0] == "multiply":
-        x = int(op[1])
-        arr = list(map(lambda a: a * x, arr))
-    elif op[0] == "power":
-        x = int(op[1])
-        arr = list(map(lambda a: a ** x, arr))
-    elif op[0] == "abs":
-        arr = list(map(lambda a: abs(a), arr))
+primes = list(filter(lambda x: is_prime(x), arr))
 
-print(*arr)
+if primes:
+    print(*primes)
+else:
+    print("No primes")

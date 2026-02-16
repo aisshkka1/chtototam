@@ -2,13 +2,20 @@ class Pair:
     def __init__(self, a, b):
         self.a = a
         self.b = b
-    def add(self, new_a, new_b):
+    def add(self, other):
         self.a+=new_a
         self.b+=new_b
-        return self.a, self.b
+        return self.a + other.a, self.b + other.b
+
 
 a, b, c, d = map(int, input().split())
-pair_f = Pair(a, b)
-sum_num = pair_f.add(c, d)
-print(f"Result: {sum_num[0]} {sum_num[1]}")
+pair1 = Pair(a1, b1)
+pair2 = Pair(a2, b2)
+
+result = pair1.add(pair2)
+
+print(f"Result: {result[0]} {result[1]}")
+
+
+
 
