@@ -1,18 +1,18 @@
 import json
-
-def apply_patch(s, p):
-    for key, val in patch.items():
-        if val is None:
+def apply_patch(source, patch):
+    for key, value in patch.items():
+        if value is None:
             source.pop(key, None)
-        elif key in source and isinstance(source[key], dict) and isinstance(val, dict):
-            apply_patch(source[key], val)
+        elif key not in source:
+            source[key] = value
+        elif isinstance(value, dict) and isinstance(source.get(key), dict):
+            apply_patch(source[key], value)
         else:
-            source[key] = val
+            source[key] = value
     return source
 
-s = json.loads(input())
-p = json.loads(input())
+source = json.loads(input())
+patch = json.loads(input())
 
 result = apply_patch(source, patch)
-
-print(json.dumps(result, separators=(',', ':'), sort_keys=True))
+print(json.dumps(result, separators=(",", ":"), sort_keys=True))

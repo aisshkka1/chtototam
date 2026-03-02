@@ -23,7 +23,6 @@ def outer(commands):
     n = inner()
     return n
 
-# Read input
 m = int(input())
 commands = [input() for _ in range(m)]
 

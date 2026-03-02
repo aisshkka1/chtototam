@@ -1,5 +1,4 @@
 import importlib
-
 q = int(input())
 
 for _ in range(q):
