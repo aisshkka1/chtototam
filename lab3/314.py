@@ -2,7 +2,7 @@ n = int(input())
 arr = list(map(int, input().split()))
 q = int(input())
 
-for _ in range(q):
+for i in range(q):
     op = input().split()
 
     if op[0] == "add":
