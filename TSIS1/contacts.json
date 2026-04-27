@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Merey Kim",
+        "email": "mirvatai@gmail.com",
+        "birthday": "2007-09-23",
+        "group": "Friends",
+        "phones": [
+            {
+                "phone": "87077906503",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Nargiz Zhakezhan",
+        "email": "n.zhakezhan@kbtu.kz",
+        "birthday": "2008-04-12",
+        "group": "Friends",
+        "phones": [
+            {
+                "phone": "87770003490",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Ilyas Sirazh",
+        "email": "iliyas077@gmail.com",
+        "birthday": "2008-03-11",
+        "group": "Other",
+        "phones": [
+            {
+                "phone": "87018934892",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "name": "Alexandra Kulikova",
+        "email": "sasha1@gmail.com",
+        "birthday": "2010-01-14",
+        "group": "Family",
+        "phones": [
+            {
+                "phone": "87076894527",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Alfarabi Kenes",
+        "email": "a.kenes@kbtu.kz",
+        "birthday": "2007-08-12",
+        "group": "Friends",
+        "phones": [
+            {
+                "phone": "87475149070",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "name": "Amir Bolat",
+        "email": "am111r@mail.ru",
+        "birthday": "2008-07-28",
+        "group": "Other",
+        "phones": [
+            {
+                "phone": "87773622785",
+                "type": "work"
+            },
+            {
+                "phone": "87016213349",
+                "type": "home"
+            },
+            {
+                "phone": "87016213349",
+                "type": "home"
+            }
+        ]
+    }
+]
